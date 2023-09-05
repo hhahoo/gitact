@@ -6,5 +6,5 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - run: /home/hhahoo/b.sh ${{ inputs.ARG1 }}
+    - run: /home/hhahoo/b.sh ${{ inputs.ipvalue }}
       shell: bash
