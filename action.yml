@@ -1,10 +1,11 @@
 name: 'Hello World'
 description: 'Greet someone'
+
 inputs:
-  ipvalue:
+  region:
 
 runs:
   using: "composite"
   steps:
-    - run: /home/hhahoo/b.sh ${{ inputs.ipvalue }}
+    - run: /home/hhahoo/b.sh ${{ inputs.region }}
       shell: bash
