@@ -18,7 +18,7 @@ jobs:
       - name: Build and Test
         run: |
           echo Run Build and Test
-          exit 0
+          exit 1
 
       - name: Success Comment
         if: ${{ success() }}
