@@ -22,13 +22,13 @@ jobs:
         uses: thollander/actions-comment-pull-request@v2
         with:
           message: |
-            테스트에 성공했습니다! :tada:
+            ${{ github.head_ref }} 브랜치 빌드 테스트에 성공했습니다! :tada:
             
       - name: Failure Comment
         if: ${{ failure() }}
         uses: thollander/actions-comment-pull-request@v2
         with:
           message: |
-            테스트에 실패했습니다! :x:
+            ${{ github.head_ref }} 브랜치 빌드 테스트에 실패했습니다! :x:
             아래 로그를 확인해주세요!
             ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
