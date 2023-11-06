@@ -1,9 +1,10 @@
-name: CI TEST
+name: CI TEST ${{ inputs.branch_name }}
 
 on: 
-  pull_request:
-    branches: main
-    types: opened
+  workflow_dispatch:
+    inputs:
+      branch_name:
+        default: "AA"
 
 permissions: 
    pull-requests: write 
