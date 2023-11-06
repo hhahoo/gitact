@@ -1,5 +1,5 @@
 name: CI TEST ${{ inputs.branch_name }}
-
+run-name: AAAA ${{ inputs.branch_name }}
 on: 
   workflow_dispatch:
     inputs:
